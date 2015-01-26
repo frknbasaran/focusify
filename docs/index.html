@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="../focusify.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+	<a href="https://github.com/frknbasaran/focusify"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<center><strong class="header">Focusify</strong><br></center>
+			<center><small><i>a small jquery plugin for focus</i></small></center>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			 <div class="row">
+			 	<div class="col-md-2"></div>
+			 	<div class="col-md-8 sampleOne">
+			 		<h3>Example.sampleOne</h3>
+			 		<br>
+			 		<form> 
+					  <div class="form-group ">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="focusify-disable form-control" id="exampleInputEmail1" placeholder=".focus-disable">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Password</label>
+					    <input type="password" class="focusify-enable form-control" id="exampleInputEmail1" placeholder=".focus-disable">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Confirm Password</label>
+					    <input type="password" class="focusify-disable form-control" id="exampleInputPassword1" placeholder=".focus-enable">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputFile">File input</label>
+					    <input type="file" id="exampleInputFile">
+					    <p class="help-block">Example block-level help text here.</p>
+					  </div>
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Check me out
+					    </label>
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>		
+					<br><small>Just mark elements which will be disable as <strong>.focusify-disable</strong> and will be focused as <strong>.focusify-enable</strong>. That's all!</small>
+			 	</div>
+			 	<div class="col-md-2"></div>
+			 </div>	 
+		</div>
+		<div class="col-md-4">
+		<br>
+			<h4>Let's try this</h4>
+			<br>
+			<button onClick="focusifySample0()" class="btn btn-primary test">Focus with border</button>
+			<br><br>
+			<pre>$('.sampleOne').focusify(500,'#c0392b','border');
+			</pre>
+		</div>
+	</div>
+	
+	<hr>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 sampleTwo">
+					<h3>Example.sampleTwo</h3>
+					<br>
+					 <table class="table">
+				      <thead>
+				        <tr>
+				          <th>#</th>
+				          <th>First Name</th>
+				          <th>Last Name</th>
+				          <th>Username</th>
+				        </tr>
+				      </thead>
+				      <tbody>
+				        <tr class="focusify-disable">
+				          <th scope="row">1</th>
+				          <td>Mark</td>
+				          <td>Otto</td>
+				          <td>@mdo</td>
+				        </tr>
+				        <tr class="focusify-disable">
+				          <th scope="row">2</th>
+				          <td>Jacob</td>
+				          <td>Thornton</td>
+				          <td>@fat</td>
+				        </tr>
+				        <tr class="focusify-enable">
+				          <th scope="row">3</th>
+				          <td>Larry</td>
+				          <td>the Bird</td>
+				          <td>@twitter</td>
+				        </tr>
+				        <tr class="focusify-disable">
+				          <th scope="row">4</th>
+				          <td>Furkan</td>
+				          <td>Başaran</td>
+				          <td>@frknbasaran</td>
+				        </tr>
+				        <tr class="focusify-disable">
+				          <th scope="row">5</th>
+				          <td>Okan</td>
+				          <td>Vurdu</td>
+				          <td>@okanvurdu</td>
+				        </tr>
+				      	<tr class="focusify-disable">
+				          <th scope="row">6</th>
+				          <td>Özgür Adem</td>
+				          <td>Işıklı</td>
+				          <td>@iozguradem</td>
+				        </tr>
+				        <tr class="focusify-disable">
+				          <th scope="row">7</th>
+				          <td>Eray</td>
+				          <td>Arslan</td>
+				          <td>@eryarslan</td>
+				        </tr>
+				      </tbody>
+				    </table>
+				</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<br>
+		<h4>Let's try this</h4>
+		<br>
+		<button onClick="focusifySample1()" class="btn btn-primary">Focus with background</button>
+		<br><br>
+		<pre>$('.sampleTwo').focusify(500,'#c0392b','background');
+		</pre>
+	</div>
+	</div>
+	<hr>
+	<div class="col-md-8">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 sampleThree">
+				<h3>Example.sampleThree</h3>
+				<br>
+				<p class="focusify-disable notification bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<p class="focusify-disable notification bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+				<p class="focusify-disable notification bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+				<p class="focusify-enable notification bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+				<p class="focusify-disable notification bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<br>
+		<h4>Let's try this</h4>
+		<br>
+		<button onClick="focusifySample2()" class="btn btn-primary">Focus with reverse colors</button>
+		<br><br>
+		<pre>$('.sampleThree').focusify(500, null, "reverse");
+		</pre>
+	</div>
+	</div>
+	<hr>
+	<div class="col-md-12">
+	<center><p>Developed by <a target="_new" href="http://twitter.com/frknbasaran"><strong>frknbasaran</strong></a> with Javascript & <i class="glyphicon glyphicon-heart"></i></p></center>
+	</div>
+</div>
+</body>
+</html>

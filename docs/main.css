@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+.header {
+	font-size: 72px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.notification {
+	padding: 10px;
+}
