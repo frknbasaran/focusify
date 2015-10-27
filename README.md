@@ -1,7 +1,7 @@
 # Focusify
 *Small jQuery Focus Plugin*
 
-You can reach to docs at [frknbasaran.github.io/focusify](http://frknbasaran.github.io/focusify)
+You can reach to docs at [frknbasaran.github.io/focusify] (http://frknbasaran.github.io/focusify)
 
 ## Contributing
 
